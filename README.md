@@ -9,5 +9,3 @@
 | **checkpoint_best.pth** | ~375MB | (https://drive.google.com/drive/folders/11wgoO7OSMfTg--So28q9J8VuW8ylfBzE) |
 | **checkpoint_latest.pth** | ~375MB | (https://drive.google.com/drive/folders/11wgoO7OSMfTg--So28q9J8VuW8ylfBzE) |
 
-
-<img src="progress.png" alt="Training Progress"># U_mamba_Weights
