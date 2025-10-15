@@ -1,0 +1,22 @@
+
+#######################################################################
+Please cite the following paper when using nnU-Net:
+Isensee, F., Jaeger, P. F., Kohl, S. A., Petersen, J., & Maier-Hein, K. H. (2021). nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation. Nature methods, 18(2), 203-211.
+#######################################################################
+ 
+
+This is the configuration used by this training:
+Configuration name: 2d
+ {'data_identifier': 'nnUNetPlans_2d', 'preprocessor_name': 'DefaultPreprocessor', 'batch_size': 13, 'patch_size': [320, 704], 'median_image_size_in_voxels': [1024.0, 2048.0], 'spacing': [1.0, 1.0], 'normalization_schemes': ['ZScoreNormalization', 'ZScoreNormalization', 'ZScoreNormalization'], 'use_mask_for_norm': [False, False, False], 'UNet_class_name': 'PlainConvUNet', 'UNet_base_num_features': 32, 'n_conv_per_stage_encoder': [2, 2, 2, 2, 1, 1, 1], 'n_conv_per_stage_decoder': [2, 2, 2, 2, 1, 1], 'num_pool_per_axis': [6, 6], 'pool_op_kernel_sizes': [[1, 1], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2]], 'conv_kernel_sizes': [[3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3]], 'unet_max_num_features': 512, 'resampling_fn_data': 'resample_data_or_seg_to_shape', 'resampling_fn_seg': 'resample_data_or_seg_to_shape', 'resampling_fn_data_kwargs': {'is_seg': False, 'order': 3, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_seg_kwargs': {'is_seg': True, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_probabilities': 'resample_data_or_seg_to_shape', 'resampling_fn_probabilities_kwargs': {'is_seg': False, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'batch_dice': True} 
+ 
+These are the global plan.json settings:
+ {'dataset_name': 'Dataset001_Coralscapes', 'plans_name': 'nnUNetPlans', 'original_median_spacing_after_transp': [999.0, 1.0, 1.0], 'original_median_shape_after_transp': [1, 1024, 2048], 'image_reader_writer': 'NaturalImage2DIO', 'transpose_forward': [0, 1, 2], 'transpose_backward': [0, 1, 2], 'experiment_planner_used': 'ExperimentPlanner', 'label_manager': 'LabelManager', 'foreground_intensity_properties_per_channel': {'0': {'max': 255.0, 'mean': 91.26556849953177, 'median': 86.0, 'min': 0.0, 'percentile_00_5': 2.0, 'percentile_99_5': 242.0, 'std': 52.138415625676174}, '1': {'max': 255.0, 'mean': 133.02924173574897, 'median': 131.0, 'min': 0.0, 'percentile_00_5': 21.0, 'percentile_99_5': 252.0, 'std': 54.131045307544895}, '2': {'max': 255.0, 'mean': 125.69594570569252, 'median': 121.0, 'min': 0.0, 'percentile_00_5': 19.0, 'percentile_99_5': 255.0, 'std': 54.42131335217618}}} 
+ 
+2025-10-14 21:11:14.985908: unpacking dataset... 
+2025-10-14 21:11:24.843866: unpacking done... 
+2025-10-14 21:11:24.844327: do_dummy_2d_data_aug: False 
+2025-10-14 21:11:24.935863: Unable to plot network architecture: 
+2025-10-14 21:11:24.935948: No module named 'hiddenlayer' 
+2025-10-14 21:11:25.004596:  
+2025-10-14 21:11:25.004683: Epoch 117 
+2025-10-14 21:11:25.004786: Current learning rate: 0.00894 
